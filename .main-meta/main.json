@@ -4,7 +4,7 @@
     "content": {
         "metaDataVersion": "1.0.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-cnano-pwm-basic-demo-mcc",
-        "version": "1.0.0",
+        "version": "1.0.2",
         "displayName": "PIC18F47Q10 CNANO PWM BASIC DEMO USING MCC",
         "projectName": "pic18f47q10-cnano-pwm-basic-demo-mcc",
         "shortDescription": "PIC18F47Q10 PWM Basic Configuration - MCC code example ",
@@ -14,7 +14,7 @@
         },
         "compiler": {
             "name": "XC8",
-            "semverRange": "^2.10"
+            "semverRange": "^2.10.0"
         },
         "dfp": {
             "name": "PIC18F-Q_DFP",
