@@ -54,17 +54,17 @@
             "MCC",
             "Duty cycle",
             "Frequency"
-        ]
-    },
-    "additionalData": {
-        "longDescription": {
-            "metaDataVersion": "1.0.0",
-            "category": "com.microchip.portal.fileRef",
-            "content": {
-                "metaDataVersion": "1.0.0",
-                "fileName": "./README.md",
-                "mimeType": "text/markdown"
-            }
-        }
+        ],
+		"additionalData": {
+			"longDescription": {
+				"metaDataVersion": "1.0.0",
+				"category": "com.microchip.portal.fileRef",
+				"content": {
+					"metaDataVersion": "1.0.0",
+					"fileName": "./README.md",
+					"mimeType": "text/markdown"
+				}
+			}
+		}
     }
 }
