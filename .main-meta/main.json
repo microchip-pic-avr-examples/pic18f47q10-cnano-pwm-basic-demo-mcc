@@ -2,27 +2,29 @@
     "metaDataVersion": "1.0.0",
     "category": "com.microchip.ide.project",
     "content": {
-        "metaDataVersion": "1.0.0",
+        "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-cnano-pwm-basic-demo-mcc",
-        "version": "1.0.2",
-        "displayName": "PIC18F47Q10 CNANO PWM BASIC DEMO USING MCC",
+        "version": "1.0.4",
+        "displayName": "PWM Basic Configuration",
         "projectName": "pic18f47q10-cnano-pwm-basic-demo-mcc",
-        "shortDescription": "PIC18F47Q10 PWM Basic Configuration - MCC code example ",
+        "shortDescription": "This example describes how to configure the CCP1 peripheral in conjunction with TMR2 to produce a low speed PWM signal. Two GPIO pins are used. RE2 as an input to read the on-board button for controlling the demo and RB4 as a PWM output.",
         "ide": {
-            "name": "MPLABX",
+            "name": "MPLAB X",
             "semverRange": ">=5.30.0"
         },
-        "compiler": {
-            "name": "XC8",
-            "semverRange": "^2.10.0"
-        },
+        "compiler": [
+			{
+				"name": "XC8",
+				"semverRange": "^2.10.0"
+			}
+		],
         "dfp": {
             "name": "PIC18F-Q_DFP",
             "semverRange": "^1.3.89"
         },
         "configurator": {
             "name": "MCC",
-            "semverRange": ">=3.9.50"
+            "semverRange": "^3.95.0"
         },
         "device": {
             "metaDataVersion": "1.0.0",
@@ -34,26 +36,19 @@
                 "versionRange": "*"
             }
         },
-        "author": "Cristian Pop",
+        "author": "Microchip",
         "subcategories": [
-            "MCC",
+            "Peripherals",
             [
-               "Perpherals", "PWM"
-            ],
-            [
-               "Perpherals", "CCP"
-            ],
-            [
-               "Perpherals", "TIMER"
-            ]
+               "Peripherals", "PWM",
+            ]            			
         ],
         "peripherals": [
-            "PWM","CCP","TIMER"
+            "PWM",
         ],
         "keywords": [
-            "MCC",
-            "Duty cycle",
-            "Frequency"
+            "Getting Started",
+            "CCP1",
         ],
 		"additionalData": {
 			"longDescription": {
@@ -66,5 +61,5 @@
 				}
 			}
 		}
-    }
+	}
 }
