@@ -40,11 +40,11 @@
         "subcategories": [
             "Peripherals",
             [
-               "Peripherals", "PWM",
+               "Peripherals", "PWM"
             ]            			
         ],
         "peripherals": [
-            "PWM",
+            "PWM"
         ],
         "keywords": [
             "Getting Started",
