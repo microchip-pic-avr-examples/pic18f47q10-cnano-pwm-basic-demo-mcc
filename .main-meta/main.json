@@ -5,7 +5,7 @@
         "metaDataVersion": "1.1.0",
         "name": "com.microchip.mcu8.mplabx.project.pic18f47q10-cnano-pwm-basic-demo-mcc",
         "version": "1.0.4",
-        "displayName": "PWM Basic Configuration Demo (MCC)",
+        "displayName": "PWM Basic Configuration",
         "projectName": "pic18f47q10-cnano-pwm-basic-demo-mcc",
         "shortDescription": "This example describes how to configure the CCP1 peripheral in conjunction with TMR2 to produce a low speed PWM signal. Two GPIO pins are used. RE2 as an input to read the on-board button for controlling the demo and RB4 as a PWM output.",
         "ide": {
@@ -46,8 +46,7 @@
             "PWM"
         ],
         "keywords": [
-            "Getting Started",
-            "CCP1"
+            "Getting Started"
         ],
 		"additionalData": {
 			"longDescription": {
