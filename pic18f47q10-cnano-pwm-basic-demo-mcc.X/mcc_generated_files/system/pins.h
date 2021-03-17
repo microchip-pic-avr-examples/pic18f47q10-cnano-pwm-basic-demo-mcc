@@ -1,24 +1,21 @@
 /**
-  @Generated Pin Manager Header File
+  Generated Pins header File
 
-  @Company:
+  Company:
     Microchip Technology Inc.
 
-  @File Name:
-    pin_manager.h
+  File Name:
+    pins.h
 
-  @Summary:
-    This is the Pin Manager file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  Summary:
+    This is generated driver header for pins. 
 
-  @Description
-    This header file provides APIs for driver for .
-    Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.79.0
-        Device            :  PIC18F47Q10
-        Driver Version    :  2.11
-    The generated drivers are tested against the following:
-        Compiler          :  XC8 2.10 and above
-        MPLAB 	          :  MPLAB X 5.30	
+  Description:
+    This header file provides APIs for all pins selected in the GUI.
+
+  Generation Information:
+    Driver Version:  3.0.0
+
 */
 
 /*
@@ -44,8 +41,8 @@
     SOFTWARE.
 */
 
-#ifndef PIN_MANAGER_H
-#define PIN_MANAGER_H
+#ifndef PINS_H
+#define PINS_H
 
 /**
   Section: Included Files
@@ -65,19 +62,27 @@
 #define PULL_UP_ENABLED      1
 #define PULL_UP_DISABLED     0
 
-// get/set RB4 procedures
-#define RB4_SetHigh()            do { LATBbits.LATB4 = 1; } while(0)
-#define RB4_SetLow()             do { LATBbits.LATB4 = 0; } while(0)
-#define RB4_Toggle()             do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0)
-#define RB4_GetValue()              PORTBbits.RB4
-#define RB4_SetDigitalInput()    do { TRISBbits.TRISB4 = 1; } while(0)
-#define RB4_SetDigitalOutput()   do { TRISBbits.TRISB4 = 0; } while(0)
-#define RB4_SetPullup()             do { WPUBbits.WPUB4 = 1; } while(0)
-#define RB4_ResetPullup()           do { WPUBbits.WPUB4 = 0; } while(0)
-#define RB4_SetAnalogMode()         do { ANSELBbits.ANSELB4 = 1; } while(0)
-#define RB4_SetDigitalMode()        do { ANSELBbits.ANSELB4 = 0; } while(0)
+// get/set RB4 aliases
+#define IO_RB4_TRIS                 TRISBbits.TRISB4
+#define IO_RB4_LAT                  LATBbits.LATB4
+#define IO_RB4_PORT                 PORTBbits.RB4
+#define IO_RB4_WPU                  WPUBbits.WPUB4
+#define IO_RB4_OD                   ODCONBbits.ODCB4
+#define IO_RB4_ANS                  ANSELBbits.ANSELB4
+#define IO_RB4_SetHigh()            do { LATBbits.LATB4 = 1; } while(0)
+#define IO_RB4_SetLow()             do { LATBbits.LATB4 = 0; } while(0)
+#define IO_RB4_Toggle()             do { LATBbits.LATB4 = ~LATBbits.LATB4; } while(0)
+#define IO_RB4_GetValue()           PORTBbits.RB4
+#define IO_RB4_SetDigitalInput()    do { TRISBbits.TRISB4 = 1; } while(0)
+#define IO_RB4_SetDigitalOutput()   do { TRISBbits.TRISB4 = 0; } while(0)
+#define IO_RB4_SetPullup()          do { WPUBbits.WPUB4 = 1; } while(0)
+#define IO_RB4_ResetPullup()        do { WPUBbits.WPUB4 = 0; } while(0)
+#define IO_RB4_SetPushPull()        do { ODCONBbits.ODCB4 = 0; } while(0)
+#define IO_RB4_SetOpenDrain()       do { ODCONBbits.ODCB4 = 1; } while(0)
+#define IO_RB4_SetAnalogMode()      do { ANSELBbits.ANSELB4 = 1; } while(0)
+#define IO_RB4_SetDigitalMode()     do { ANSELBbits.ANSELB4 = 0; } while(0)
 
-// get/set Button aliases
+// get/set RE2 aliases
 #define Button_TRIS                 TRISEbits.TRISE2
 #define Button_LAT                  LATEbits.LATE2
 #define Button_PORT                 PORTEbits.RE2
@@ -123,7 +128,7 @@ void PIN_MANAGER_IOC(void);
 
 
 
-#endif // PIN_MANAGER_H
+#endif // PINS_H
 /**
  End of File
 */
