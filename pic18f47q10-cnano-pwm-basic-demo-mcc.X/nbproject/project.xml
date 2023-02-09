@@ -4,12 +4,8 @@
     <configuration>
         <data xmlns="http://www.netbeans.org/ns/make-project/1">
             <name>pic18f47q10-cnano-pwm-basic-demo-mcc</name>
-            <creation-uuid>45e7d90c-c9dd-4b8a-a038-b420e46f51f0</creation-uuid>
+            <creation-uuid>081a0945-33aa-47ef-9f12-b24ec0c2a45b</creation-uuid>
             <make-project-type>0</make-project-type>
-            <c-extensions>c</c-extensions>
-            <cpp-extensions/>
-            <header-extensions>h</header-extensions>
-            <asminc-extensions/>
             <sourceEncoding>ISO-8859-1</sourceEncoding>
             <make-dep-projects/>
             <sourceRootList/>
